@@ -35,7 +35,7 @@ def create_vocab(X_train) :
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("../dbpedia_8K.csv")
+    df = pd.read_csv("dbpedia_8K.csv")
 
     categories = {
         'Company':0,

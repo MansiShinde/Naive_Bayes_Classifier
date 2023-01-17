@@ -68,7 +68,7 @@ def addword():
     word = request.form["addword"]
     
     category = list(predictions.keys())[0]
-    top_most_words = model.add_Word(word,category,document)
+    top_most_words = model.add_Word(word.lower(),category,document)
     keys = list(top_most_words.keys())
     values = [ val for val in top_most_words.values()]
     normalized_values = preprocessing.normalize([values])
@@ -110,16 +110,21 @@ def rwordImp(value_to_send):
     global top_most_words
 
     prVal = json.loads(value_to_send)
+    print(prVal)
     word_index = prVal['index']    
     word_pr = prVal['value']
     category = list(predictions.keys())[0]
     word = list(top_most_words.keys())[word_index]
-
+    print(word)
     values = [ val for val in top_most_words.values()]
+    print(values)
     normalized_values = preprocessing.normalize([values])
+    print(normalized_values)
     norm = normalized_values.tolist()[0]
-    norm[word_index] = norm[word_index] + word_pr
+    norm[word_index] = word_pr
     denorm = denormalize_data(norm,values)
+    print(norm)
+    print(denorm)
 
     model.word_importance(denorm[word_index], word, category)
     model.do_model_prediction()
