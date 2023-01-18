@@ -37,5 +37,8 @@ respective word whose importance he wishes to change, and then click on the upda
 
 
 
-https://user-images.githubusercontent.com/29672533/213039269-b093f85c-2150-4227-b4aa-1cd983ff0bf2.mov
+
+https://user-images.githubusercontent.com/29672533/213039359-7a4747d7-2126-499e-a8ef-c0a03e6f1c88.mov
+
+
 
