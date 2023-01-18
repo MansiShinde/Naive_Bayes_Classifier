@@ -3,10 +3,12 @@
 Implementing Naive Bayes Classifier from scratch to categorize documents.
 
 Following are the files present in source code:
+
 Backend: 
 MNB.py
 vocab_build.py 
 app.py
+
 Templates: 
 index.html
 
@@ -31,4 +33,9 @@ clicking on the “ADD A WORD” button.
 Word Importance Update:
 1. To increase or decrease the word importance, the user can drag the bar of the
 respective word whose importance he wishes to change, and then click on the update model button at the bottom of the window.
+
+
+
+
+https://user-images.githubusercontent.com/29672533/213039269-b093f85c-2150-4227-b4aa-1cd983ff0bf2.mov
 
